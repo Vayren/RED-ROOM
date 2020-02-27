@@ -1,0 +1,222 @@
+@import 'reset';
+@import 'variables';
+@import 'mixins';
+@import 'fonts';
+@import 'header';
+@import 'movies-block';
+@import 'coming-soon-block';
+@import 'serials-block';
+@import 'top-box';
+@import 'news-block';
+@import 'subscribe-block';
+@import 'footer';
+
+*{
+	box-sizing: border-box;
+}
+
+body, html{
+	width:100%;
+	height: 100%;
+}
+
+body{
+	font-size: 100%;
+	position: relative;
+}
+
+.main-content{
+	max-width: 1360px;
+	margin:0 auto;
+	padding:0 30px;
+}
+.active-btn{
+	background-color: $redColor;
+}
+.logo{
+	display: flex;
+	flex-flow:row nowrap;
+	align-items: center;
+	color:white;
+	font-size: 2.6rem;
+	font-family: 'Cabin', sans-serif;
+	font-weight: 600;
+	@include mq-laptop-s{
+		font-size: 2rem;
+	}
+	@include  mq-mobile-m{
+		font-size: 1.6rem;
+	}
+	span{
+		display: inline-block;
+		margin-left: 10px;
+	}
+}
+.btn-up{
+	z-index: 1000;
+	display: none;
+	position:fixed;
+	bottom:50px;
+	right: 50px;
+	width:60px;
+	height: 60px;
+	background-color:$redColor;
+	line-height: 60px;
+	text-align: center;
+	border-radius: 50%;
+	color:white;
+	font-size: 2.3rem;
+}
+.navigation{
+	margin: 50px 0;
+	display: flex;
+	justify-content: center;
+	flex-flow:row nowrap;
+	ul{
+		display: flex;
+		flex-flow:row nowrap;
+	}
+	li{
+		padding:0 8px;
+	}
+	a{
+		@include btn($redColor);
+	}
+	.active{
+		color:white;
+		background-color: $redColor;
+	}
+	@include mq-tablet-l{
+		a{
+			font-size: 0.9rem;
+			padding: 15px 30px;
+		}
+	}
+	@include mq-tablet{
+		a{
+			font-size: 0.72rem;
+			padding: 15px 30px;
+		}
+	}
+	@include mq-tablet-s{
+		ul{
+			flex-flow:column nowrap;
+			li{
+				padding:10px 0;
+			}
+		}
+	}
+}
+
+.post{
+	width:100%;
+	margin-bottom: 30px;
+	background-color: white;
+	border-radius: 15px;
+	box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.10);
+	text-align: left;
+	&:hover{
+		.hover-block{
+			opacity: 1;
+			a{
+				margin-bottom: 0;
+			}
+		}
+	}
+	.post-img{
+		position: relative;
+	}
+	.main-img{
+		display: block;
+		width:100%;
+		height: auto;
+		border-top-right-radius: 15px;
+		border-top-left-radius: 15px;
+	}
+	.hover-block{
+		border-top-right-radius: 15px;
+		border-top-left-radius: 15px;
+		position:absolute;
+		top:0;
+		left:0;
+		width:100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.4);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		opacity: 0;
+		transition: opacity 0.4s;
+		a{
+			margin-bottom: 70px;
+			transition: all 0.5s;
+		}
+	}
+	.post-info{
+		padding:0 15px 15px 15px;
+	}
+	a.title{
+		text-align: left;
+		display: inline-block;
+		font-family: 'Roboto Slab', serif;
+		text-decoration: none;
+		font-size: 1.2rem;
+		font-weight: bold;
+		color:black;
+		margin-top: 18px;
+		transition: color 0.3s;
+		&:hover{
+			color:$redColor;
+		}
+	}
+	p:not([class="rating"]){
+		color:#77756f;
+		font-family: 'Roboto', sans-serif;
+		font-size: 1rem;
+		font-weight: 400;
+		margin-top: 18px;
+	}
+	p.rating{
+		margin-top: 15px;
+		i.fa-star{
+			color:$redColor;
+			&:last-child{
+				color:#b7b7b7;
+			}
+		}
+	}
+}
+
+.dots{
+	margin: 50px 0;
+	text-align:center;
+	@include  mq-laptop-s{
+		margin-top: 30px;
+	}
+	.dot{
+		display: inline-block;
+		width:14px;
+		height: 14px;
+		border-radius: 50%;
+		border:3px solid white;
+		margin:0 15px;
+		cursor: pointer;
+		transition: background-color 0.2s;
+		&:hover{
+			background-color: white;
+		}
+		@include  mq-tablet{
+			width:11px;
+			height: 11px;
+			border:2px solid white;
+		}
+		@include  mq-mobile-m{
+			width:8px;
+			height: 8px;
+			border:1px solid white;
+		}
+	}
+	.dot-active{
+		background-color: white;
+	}
+}

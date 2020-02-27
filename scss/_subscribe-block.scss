@@ -1,0 +1,77 @@
+.subscribe-block{
+	padding:100px 0;
+	background-image: url('../img/bg-img/bg-image-2.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-align: center;
+	box-shadow: rgba(0, 0, 0, 0.5) 0px 20px 30px 0;
+	@include mq-mobile-m{
+		padding:60px 0;
+	}
+	.subscribe-content{
+		max-width: 600px;
+		padding:20px;
+		margin:0 auto;
+		@include mq-tablet{
+			max-width: 450px;
+			margin:0 auto;
+		}
+	}
+	.title{
+		@include title(white, $redColor);
+	}
+	p{
+		color:#eeeef0;
+		font-family: "Roboto", sans-serif;
+		font-weight: 300;
+		font-size: 1.3rem;
+		line-height: 1.5;
+		margin:50px auto 30px auto;
+		@include mq-mobile-m{
+			font-size: 1.15rem;
+		}
+	}
+	form{
+		input[type="email"]{
+			outline: none;
+			border: 1px solid transparent;
+			background-color: rgba(246, 246, 246, 0.3);
+			font-size: 1.1rem;
+			font-family: "Roboto", sans-serif;
+			padding:19px 20px;
+			border-radius: 5px;
+			color:white;
+			width:330px;
+			&::placeholder {
+			  color: white;
+			}
+			@include mq-tablet{
+				width:100%;
+				margin-bottom: 20px;
+			}
+		}
+
+		button{
+			text-transform: uppercase;
+			font-family: 'Roboto Slab', serif;
+			font-weight: 600;
+			color:white;
+			background-color: rgba($redColor, 1);
+			padding:15px 55px;
+			border-radius: 5px;
+			font-size: 1.2rem;
+			border:2px solid $redColor;
+			margin-left: 10px;
+			outline: none;
+			cursor: pointer;
+			transition: all 0.4s;
+			&:hover{
+				background-color: rgba($redColor, 0);
+			}
+			@include mq-tablet{
+				width:100%;
+				margin:0;
+			}
+		}
+	}
+}

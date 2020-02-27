@@ -1,0 +1,213 @@
+header{
+	width:100%;
+}
+.header-content{
+	height: 100vh;
+	background-image: url('../img/bg-img/bg-image-1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	position: relative;
+	@include mq-tablet{
+		height: auto;
+	}
+	.bars{
+		display: none;
+		color:white;
+		font-size: 2.3rem;
+		margin:0 20px;
+	}
+	nav{
+		display: flex;
+		flex-flow:row nowrap;
+		align-items: center;
+		margin:70px auto 90px auto;
+		max-width: 1360px;
+		padding: 0 30px;
+		@include mq-laptop-s{
+			flex-flow:row nowrap;
+			padding:15px 0;
+			margin:0;
+			margin-bottom: 60px;
+			background-color: $black-bcg;
+			& > *{
+				margin-bottom: 0px;
+			}
+		}
+	}
+	.header-navigation{
+		display: flex;
+		flex-flow:row nowrap;
+		margin-left: auto;
+		font-family: 'Roboto Slab', serif;
+		font-weight: 600;
+		a{
+			text-decoration: none;
+			display: block;
+			color:white;
+			font-size: 1.4rem;
+			padding:12px 14px;
+			border-radius: 6px;
+			transition: background-color 0.2s;
+			@include mq-laptop-l{
+				font-size: 1.15rem;
+			}
+			&:hover{
+				background-color: $redColor;
+			}
+		}
+		li{
+			border-radius: 6px;
+			margin:0 10px;
+		}
+	}
+	.tools{
+		display: flex;
+		flex-flow: row nowrap;
+		align-items: center;
+		color:white;
+		font-size: 1.6rem;
+		a{
+			display: inline-block;
+			color:white;
+			text-decoration: none;
+		}
+		.cart-block{
+			margin-left: 10px;
+		}
+		.countGoods{
+			font-family: 'Cabin', sans-serif;
+			font-size: 1rem;
+			margin-left: 8px;
+			align-self: flex-end;
+			font-weight: 700;
+		}
+		&>*{
+			padding:10px 12px;
+			&:hover{
+				border-radius: 6px;
+				background-color: $redColor;
+			}
+		}
+	}
+	.slider{
+		max-width: 1360px;
+		margin:0 auto;
+		.slides{
+			overflow: hidden;
+		}
+		ul{
+			display: flex;
+			justify-content: space-between;
+			width:100%;
+			li{
+				min-width: 50%;
+				@include  mq-laptop-s{
+					min-width: 100%;
+				}
+			}
+			li:not(:last-child){
+				padding: 0 30px;
+				@include  mq-laptop-s{
+					padding: 0 100px;
+				}
+				@include  mq-tablet{
+					padding: 0 60px;
+				}
+				@include  mq-mobile-m{
+					padding: 0 40px;
+				}
+			}
+		}
+		.img{
+			width:100%;
+			height: 45vh;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			opacity: 0.7;
+			transition: opacity 0.2s;
+			@include  mq-laptop-m{
+				height: 40vh;
+			}
+			@include  mq-laptop-s{
+				height: 50vh;
+			}
+			@include  mq-tablet{
+				height: 45vh;
+			}
+			@include  mq-mobile-m{
+				height: 35vh;
+			}
+			a{
+				display: block;
+				width:100%;
+				height: 100%;
+			}
+			&:hover{
+				opacity: 1;
+			}
+		}
+		.slide-1{
+			background-image: url('../img/242299.jpg');
+		}
+		.slide-2{
+			background-image: url('../img/daredevil_poster.png');
+		}
+		.description{
+			margin-top: 25px;
+			margin-left: 2px;
+			a{
+				color:white;
+				text-decoration: none;
+				font-family: 'Roboto Slab', serif;
+				font-size: 1.3rem;
+				font-weight: 600;
+				transition: color 0.3s;
+				&:hover{
+					color:$redColor;
+				}
+			}
+			p{
+				line-height: 1.5;
+				margin-top: 7px;
+				color:#5f5656;
+				font-family: 'Cabin', sans-serif;
+				font-weight: 600;
+				font-size: 1.1rem;
+			}
+			@include  mq-mobile-m{
+				a{
+					font-size: 1rem;
+				}
+				p{
+					font-size: 0.9rem;
+				}
+			}
+		}
+	}
+	.arrow-down{
+		position: absolute;
+		bottom:0;
+		left:50%;
+		transform: translate(-50%, 0%);
+		width:85px;
+		height:75px;
+		border:2px solid rgba(white, 0.3);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-top-right-radius: 40px;
+		border-top-left-radius: 40px;
+		border-bottom: none;
+		color:rgba(white, 0.3);
+		font-size: 2.5rem;
+		font-weight: normal;
+		cursor: pointer;
+		transition: all 0.2s;
+		&:hover{
+			color:rgba(white, 1);
+			border-color: rgba(white, 1);
+		}
+	}
+}

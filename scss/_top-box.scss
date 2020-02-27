@@ -1,0 +1,119 @@
+.top-box-block{
+	background-image: url('../img/bg-img/bg-img-5.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	.box-wrap{
+		padding: 90px 30px 70px 30px;
+		background-color: rgba(0, 0, 0, 0.8);
+		@include mq-mobile-m{
+		padding:60px 30px;
+	}
+	}
+	.title{
+		@include title(white, $redColor);
+	}
+	.top-posts{
+		max-width: 1600px;
+		margin:0 auto;
+		padding-top: 60px;
+		overflow:hidden;
+		@include mq-laptop-l{
+			max-width:1200px;
+		}
+		@include mq-laptop-m{
+			max-width:950px;
+		}
+		@include mq-tablet-l{
+			max-width:700px;
+		}
+		@include mq-tablet{
+			max-width:600px;
+		}
+		ul{
+			width:100%;
+			display: flex;
+			justify-content: space-between;
+			flex-flow: row nowrap;
+		}
+		.post-wrap{
+			min-width:20%;
+			padding:0 15px;
+			@include mq-laptop-l{
+				min-width:25%;
+				padding:0 30px;
+			}
+			@include mq-laptop-m{
+				min-width:33.3%;
+			}
+			@include mq-tablet-l{
+				min-width:50%;
+				padding:0 30px;
+			}
+			@include mq-tablet{
+				min-width:50%;
+				padding:0 15px;
+			}
+			@include mq-tablet-s{
+				min-width:100%;
+				padding:0 50px;
+			}
+			@include mq-mobile-m{
+				min-width:100%;
+				padding:0 10px;
+			}
+		}
+		.post{
+			&.top-post{
+				margin-bottom: 0;
+				&:not(:last-child){
+					margin-right: 40px;
+				}
+				@include mq-laptop-l{
+					a.title{
+						font-size: 1.1rem;
+					}
+					p:not([class="rating"]){
+						font-size: 0.95rem;
+					}
+				}
+			}
+		}
+		.buy-movie{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-top: 15px;
+			margin-bottom: 10px;
+			font-family: 'Roboto Slab', serif;
+			.price{
+				font-size: 1.4rem;
+				font-weight: bold;
+			}
+			a{
+				text-decoration: none;
+				text-transform: uppercase;
+				font-size: 1.2rem;
+				letter-spacing: 0.1rem;
+				color:$redColor;
+				font-weight: bold;
+				transition: color 0.4s;
+				&:hover{
+					color:black;
+				}
+			}
+			@include mq-tablet{
+				.price{
+					font-size: 1.2rem;
+				}
+				a{
+					font-size: 1rem;
+				}
+			}
+		}
+	}
+	.dots{
+		margin-top: 80px;
+		margin-bottom: 0;
+	}
+}

@@ -1,0 +1,93 @@
+.movies-block{
+	padding-top: 100px;
+	padding-bottom: 45px;
+	background-color: #f6f6f6;
+	text-align: center;
+	@include mq-mobile-m{
+		padding-top:60px;
+	}
+	.title{
+		@include title(black, #b7b7b7);
+	}
+	.posts-block{
+		max-width: 1360px;
+		margin:0 auto;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		padding: 0 30px;
+		@include mq-laptop-l{
+			max-width: 1100px; 
+		}
+		@include mq-tablet-l{
+			max-width: 700px;
+		}
+		@include mq-tablet{
+			max-width: 600px;
+		}
+		@include mq-mobile-m{
+			padding: 0 15px;
+		}
+		.post-wrap{
+			width:25%;
+			margin:0 auto;
+			padding:0 15px 35px 15px;
+			@include mq-laptop-s{
+				width:25%;
+				padding:0 12px 35px 12px;
+			}
+			@include mq-tablet-l{
+				width:50%;
+				padding:0 15px 35px 15px;
+			}
+			@include mq-tablet{
+				width:50%;
+			}
+			@include mq-tablet-s{
+				width:80%;
+			}
+			@include mq-mobile-m{
+				width:90%;
+			}
+		}
+	}
+	.post{
+		&.movie-post{
+			@include mq-laptop-l{
+				a.title{
+					font-size: 1rem;
+				}
+				p:not([class="rating"]){
+					font-size: 0.95rem;
+				}
+			}
+			@include mq-tablet-l{
+				a.title{
+					font-size: 1.2rem;
+				}
+				p:not([class="rating"]){
+					font-size: 1rem;
+				}
+			}
+			@include mq-mobile-m{
+				a.title{
+					font-size: 1rem;
+				}
+				p:not([class="rating"]){
+					font-size: 0.9rem;
+				}
+			}
+		}
+	}
+	.btn-view{
+		@include btn($redColor);
+		@include mq-tablet{
+			font-size: 1rem;
+			padding: 15px 30px;
+		}
+		@include mq-mobile-m{
+			font-size: 0.8rem;
+			padding: 15px 30px;
+		}
+	}
+}
