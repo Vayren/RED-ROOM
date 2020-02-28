@@ -1,11 +1,5 @@
 function btnUp() {
 	let upBtn = $('.btn-up');	
-	
-	/*let upBtn1 = document.querySelector('.btn-up');
-	upBtn1.onclick = function (event) {
-		event.preventDefault();
-		window.scrollTo({ top: 0, behavior: 'smooth' });
-	}*/
 
 	upBtn.click(function (event) {
 		event.preventDefault();

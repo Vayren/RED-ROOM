@@ -1,5 +1,5 @@
-function headerResize() {
-	let navBlock = document.querySelector('header nav');
+function headerResize(selector) {
+	let navBlock = document.querySelector(`${selector}`);
 	let toolsBlock = navBlock.querySelector('.tools');
 	let navigationBlock = navBlock.querySelector('.header-navigation');
 	let barsBlock = navBlock.querySelector('.bars');
@@ -16,4 +16,5 @@ function headerResize() {
 		}
 	}
 }	
-headerResize();
+headerResize('header .main-nav');
+headerResize('.main-nav.move');
