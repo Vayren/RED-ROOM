@@ -1235,7 +1235,8 @@ body {
   background-color: #151515;
   z-index: 1000;
   left: 0;
-  top: 0; }
+  top: 0;
+  transition: top 0.3s; }
 
 .main-nav {
   display: flex;
@@ -1255,8 +1256,7 @@ body {
         margin-bottom: 0px; } }
   .main-nav.move {
     margin: 0 auto;
-    padding: 20px 30px;
-    display: none; }
+    padding: 20px 30px; }
   .main-nav .bars {
     display: none;
     color: white;

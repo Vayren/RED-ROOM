@@ -227,6 +227,7 @@ body{
 	z-index: 1000;
 	left:0;
 	top:0;
+	transition: top 0.3s;
 }
 .main-nav{
 	display: flex;
@@ -248,7 +249,6 @@ body{
 	&.move{
 		margin:0 auto;
 		padding:20px 30px;
-		display: none;
 	}
 	.bars{
 		display: none;
