@@ -24,6 +24,13 @@
 		<i class="fa fa-angle-up" aria-hidden="true"></i>
 	</a>
 	<div class="move-wrap">
+		<div class="hidenMenu">
+			<ul>
+				<li><a href="#">Shopping cart</a></li>
+				<li><a href="#">Checkout</a></li>
+				<li><a href="#">Product catalog</a></li>
+			</ul>
+		</div>
 		<nav class="main-nav move">
 			<div class="bars">
 				<i class="fa fa-bars" aria-hidden="true"></i>
@@ -33,11 +40,16 @@
 				<span class="name-logo">RED ROOM</span>
 			</div>
 			<ul class="header-navigation">
-				<li class="active-btn"><a href="#">Home</a></li>
+				<li class="active-btn"><a href="index.html">Home</a></li>
 				<li><a href="#">Catalog</a></li>
 				<li><a href="#">News</a></li>
-				<li><a href="#">Shop</a></li>
-				<li><a href="#">Coutact Us</a></li>
+				<li>
+					<a href="#" class="showMenu">
+						Shop
+						<i class="fa fa-angle-down" aria-hidden="true"></i>
+					</a>
+				</li>
+				<li><a href="contactUs.html">Coutact Us</a></li>
 			</ul>
 			<div class="tools">
 				<a class="search" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
@@ -47,6 +59,13 @@
 	</div>
 	<header>
 		<div class="header-content">
+				<div class="hidenMenu">
+					<ul>
+						<li><a href="#">Shopping cart</a></li>
+						<li><a href="#">Checkout</a></li>
+						<li><a href="#">Product catalog</a></li>
+					</ul>
+				</div>
 				<nav class="main-nav">
 					<div class="bars">
 						<i class="fa fa-bars" aria-hidden="true"></i>
@@ -56,11 +75,16 @@
 						<span class="name-logo">RED ROOM</span>
 					</div>
 					<ul class="header-navigation">
-						<li class="active-btn"><a href="#">Home</a></li>
+						<li class="active-btn"><a href="index.html">Home</a></li>
 						<li><a href="#">Catalog</a></li>
 						<li><a href="#">News</a></li>
-						<li><a href="#">Shop</a></li>
-						<li><a href="#">Coutact Us</a></li>
+						<li>
+							<a href="#" class="showMenu">
+								Shop
+								<i class="fa fa-angle-down" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li><a href="contactUs.html">Coutact Us</a></li>
 					</ul>
 					<div class="tools">
 						<a class="search" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
@@ -90,7 +114,34 @@
 							</li>
 							<li>
 								<div class="slide">
-									<div class="img slide-2"><a href="#"></a></div>
+									<div class="img slide-3"><a href="#"></a></div>
+									<div class="description">
+										<a href="#">Daredevil</a>
+										<p>2015, USA, Drama, Sci-Fi, Thriller</p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="slide">
+									<div class="img slide-4"><a href="#"></a></div>
+									<div class="description">
+										<a href="#">Daredevil</a>
+										<p>2015, USA, Drama, Sci-Fi, Thriller</p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="slide">
+									<div class="img slide-5"><a href="#"></a></div>
+									<div class="description">
+										<a href="#">Daredevil</a>
+										<p>2015, USA, Drama, Sci-Fi, Thriller</p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="slide">
+									<div class="img slide-6"><a href="#"></a></div>
 									<div class="description">
 										<a href="#">Daredevil</a>
 										<p>2015, USA, Drama, Sci-Fi, Thriller</p>
@@ -100,9 +151,9 @@
 						</ul>
 					</div>
 					<div class="dots">
-						<span class="dot dot-active"></span>
-						<span class="dot"></span>
-						<span class="dot"></span>
+						<span class="dot dot-active" data-item="1"></span>
+						<span class="dot" data-item="2"></span>
+						<span class="dot" data-item="3"></span>
 					</div>
 				</div>
 			<div class="arrow-down">&#8595;</div>
@@ -655,63 +706,8 @@
 									</div>
 								</div>
 							</div>
-						</li>
-						<li class="post-wrap">	
-							<div class="post top-post">
-								<div class="post-img">
-									<img class="main-img" src="./img/posts/gallery-9.jpg" alt="">
-										<div class="hover-block">
-											<a href="#"><img class="play-btn" src="./img/playx64.png" alt=""></a>
-										</div>	
-								</div>
-								<div class="post-info">
-									<a href="#" class="title">Ant-Man and the Wasp</a>
-									<p>2018, USA, Action</p>
-									<p class="rating">
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-									</p>
-									<div class="buy-movie">
-										<span class="price">$29.00</span>
-										<a href="#">buy movie</a>
-									</div>
-								</div>
-							</div>
-						</li>
-						<li class="post-wrap">	
-							<div class="post top-post">
-								<div class="post-img">
-									<img class="main-img" src="./img/posts/gallery-9.jpg" alt="">
-										<div class="hover-block">
-											<a href="#"><img class="play-btn" src="./img/playx64.png" alt=""></a>
-										</div>	
-								</div>
-								<div class="post-info">
-									<a href="#" class="title">Ant-Man and the Wasp</a>
-									<p>2018, USA, Action</p>
-									<p class="rating">
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-									</p>
-									<div class="buy-movie">
-										<span class="price">$29.00</span>
-										<a href="#">buy movie</a>
-									</div>
-								</div>
-							</div>
-						</li>
+						</li>	
 					</ul>
-				</div>
-				<div class="dots">
-					<span class="dot dot-active"></span>
-					<span class="dot"></span>
-					<span class="dot"></span>
 				</div>
 			</div>
 		</div>
@@ -818,5 +814,8 @@
 	<script src="./js/footerShow.js"></script>
 	<script src="./js/btn-up_fixed-menu.js"></script>
 	<script src="./js/headerResize.js"></script>
+	<script src="./js/headerSlider.js"></script>
+	<script src="./js/topBoxSlider.js"></script>
+	<script src="./js/hideMenu.js"></script>
 </body>
 </html>

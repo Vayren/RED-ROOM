@@ -4,7 +4,7 @@ function headerResize(selector) {
 	let navigationBlock = navBlock.querySelector('.header-navigation');
 	let barsBlock = navBlock.querySelector('.bars');
 
-	window.addEventListener('resize', function resize() {
+	window.addEventListener('resize', function () {
 			if(document.body.offsetWidth <= 1024){
 				toolsBlock.style.display = 'none';
 				navigationBlock.style.display = 'none';

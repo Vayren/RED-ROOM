@@ -1,0 +1,85 @@
+.contact-block{
+	.title{
+		padding:100px 0 60px 0;
+		@include title(black, #b7b7b7);
+	}
+	.form-block{
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: center;
+	}
+	form{
+		width: 770px;
+	}
+	.form-inner{
+		display: flex;
+		flex-flow:column nowrap;
+		justify-content: center;
+		.form-element{
+			position: relative;
+			margin:5px;
+			font-family: "Roboto", sans-serif;
+			.errorMessage{
+				position: absolute;
+				top:5px;
+				right: 10px;
+				font-size: 0.7rem;
+				font-weight: 300;
+				color:$redColor;
+				opacity: 1;
+			}
+		}
+		.top-block{
+			display: flex;
+			flex-flow: row nowrap;
+			.left-side, .right-side{
+				display: flex;
+				flex-flow: column nowrap;
+				flex:1;
+				input{
+					width:100%;
+					outline: none;
+					border:none;
+					background-color: #f8f8f8;
+					padding:20px;
+					border-radius:5px;
+					font-size: 1.2rem;
+					color:#c1c1c1;
+					&::placeholder { 
+						color:#c1c1c1;
+					}
+				}
+			}
+		}
+		.middle-block{
+			textarea{
+				font-size: 1.2rem;
+				width:100%;
+				resize: none;
+				height: 190px;
+				outline: none;
+				border:none;
+				background-color: #f8f8f8;
+				padding:20px;
+				border-radius:5px;
+				color:#c1c1c1;
+				font-family: "Roboto", sans-serif;
+				&::placeholder { 
+					color:#c1c1c1;
+				}
+			}
+		}
+		.bottom-block{
+			text-align: center;
+			button{
+				@include btn(white);
+				background-color: $redColor;
+				border:none;
+				cursor: pointer;
+				&:hover{
+					background-color: #322f2f;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,33 @@
+footer{
+	padding: 120px 0;
+	text-align:center;
+	position: fixed;
+	bottom: 0;
+	left:0;
+	width:100%;
+	z-index: -1;
+	background-color: $black-bcg;
+	.logo{
+		display: inline-flex;
+		color:white;
+		font-weight: bold;
+	}
+	.shares{
+		margin: 20px 0 30px 0;
+		a{
+			display: inline-block;
+			color:white;
+			text-decoration: none;
+			font-size: 1.3rem;
+			margin:0 5px;
+			transition: color 0.3s;
+			&:hover{
+				color:$redColor;
+			}
+		}
+	}
+	.copyrights{
+		color:#7c7c7c;
+		font-family: 'Roboto', sans-serif;
+	}
+}

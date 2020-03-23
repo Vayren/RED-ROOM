@@ -1,15 +1,14 @@
-@import 'reset';
-@import 'variables';
-@import 'mixins';
-@import 'fonts';
-@import 'header';
-@import 'movies-block';
-@import 'coming-soon-block';
-@import 'serials-block';
-@import 'top-box';
-@import 'news-block';
-@import 'subscribe-block';
-@import 'footer';
+@import 'commonStyles/reset';
+@import 'commonStyles/variables';
+@import 'commonStyles/mixins';
+@import 'index/header';
+@import 'index/movies-block';
+@import 'index/coming-soon-block';
+@import 'index/serials-block';
+@import 'index/top-box';
+@import 'index/news-block';
+@import 'index/subscribe-block';
+@import 'commonStyles/footer';
 
 *{
 	box-sizing: border-box;
@@ -24,7 +23,9 @@ body{
 	font-size: 100%;
 	position: relative;
 }
-
+main{
+	box-shadow: rgba(0, 0, 0, 0.8) 0px 20px 30px 0;
+}
 .main-content{
 	max-width: 1360px;
 	margin:0 auto;
@@ -224,10 +225,33 @@ body{
 	position: fixed;
 	width:100%;
 	background-color: $black-bcg;
-	z-index: 1000;
 	left:0;
 	top:0;
-	transition: top 0.3s;
+	z-index: 1000;
+	transition: top .3s;
+	.hidenMenu{
+		position: absolute;
+		color:white;
+		z-index: 1000;
+		opacity: 0;
+		background-color: #151515;
+		font-family: "Roboto", sans-serif;
+		font-weight: 300;
+		padding: 20px 40px;
+		width:250px;
+		border-radius: 5px;
+		display: none;
+		a{
+			text-decoration: none;
+			color:white;
+			line-height: 2;
+			font-size: 1.1rem;
+			transition: color 0.2s;
+			&:hover{
+				color:$redColor;
+			}
+		}
+	}
 }
 .main-nav{
 	display: flex;
@@ -236,6 +260,7 @@ body{
 	margin:70px auto 90px auto;
 	max-width: 1360px;
 	padding: 0 30px;
+	position: relative;
 	@include mq-laptop-s{
 		flex-flow:row nowrap;
 		padding:15px 0;
@@ -262,6 +287,12 @@ body{
 		margin-left: auto;
 		font-family: 'Roboto Slab', serif;
 		font-weight: 600;
+		.fa-angle-down{
+			display: inline-block;
+			margin-left: 5px;
+			font-weight: bold;
+			font-size: 1.1rem;
+		}
 		a{
 			text-decoration: none;
 			display: block;

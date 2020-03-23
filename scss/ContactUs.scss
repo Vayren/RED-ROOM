@@ -1,0 +1,157 @@
+@import 'commonStyles/reset';
+@import 'commonStyles/variables';
+@import 'commonStyles/mixins';
+@import 'commonStyles/footer';
+@import 'contactUs/header';
+@import 'contactUs/mainNav';
+@import 'contactUs/mainContact';
+@import 'contactUs/mainInfo';
+
+*{
+	box-sizing: border-box;
+}
+
+body, html{
+	width:100%;
+	height: 100%;
+}
+
+body{
+	font-size: 100%;
+	position: relative;
+}
+main{
+	background-color: white;
+	box-shadow: rgba(0, 0, 0, 0.8) 0px 20px 30px 0;
+	overflow: hidden;
+}
+.active-btn{
+	background-color: $redColor;
+}
+.logo{
+	display: flex;
+	flex-flow:row nowrap;
+	align-items: center;
+	color:white;
+	font-size: 2.6rem;
+	font-family: 'Cabin', sans-serif;
+	font-weight: 600;
+	@include mq-laptop-s{
+		font-size: 2rem;
+	}
+	@include  mq-mobile-m{
+		font-size: 1.6rem;
+	}
+	span{
+		display: inline-block;
+		margin-left: 10px;
+	}
+}
+.btn-up{
+	z-index: 1000;
+	display: none;
+	position:fixed;
+	bottom:50px;
+	right: 50px;
+	width:60px;
+	height: 60px;
+	background-color:$redColor;
+	line-height: 60px;
+	text-align: center;
+	border-radius: 50%;
+	color:white;
+	font-size: 2.3rem;
+}
+
+.move-wrap{
+	position: fixed;
+	width:100%;
+	background-color: $black-bcg;
+	z-index: 1000;
+	left:0;
+	top:0;
+	transition: top 0.3s;
+}
+.main-nav{
+	display: flex;
+	flex-flow:row nowrap;
+	align-items: center;
+	margin:70px auto 90px auto;
+	max-width: 1360px;
+	padding: 0 30px;
+	@include mq-laptop-s{
+		flex-flow:row nowrap;
+		padding:15px 0;
+		margin:0;
+		margin-bottom: 60px;
+		background-color: $black-bcg;
+		& > *{
+			margin-bottom: 0px;
+		}
+	}
+	&.move{
+		margin:0 auto;
+		padding:20px 30px;
+	}
+	.bars{
+		display: none;
+		color:white;
+		font-size: 2.3rem;
+		margin:0 20px;
+	}
+	.header-navigation{
+		display: flex;
+		flex-flow:row nowrap;
+		margin-left: auto;
+		font-family: 'Roboto Slab', serif;
+		font-weight: 600;
+		a{
+			text-decoration: none;
+			display: block;
+			color:white;
+			font-size: 1.4rem;
+			padding:12px 14px;
+			border-radius: 6px;
+			transition: background-color 0.2s;
+			@include mq-laptop-l{
+				font-size: 1.15rem;
+			}
+			&:hover{
+				background-color: $redColor;
+			}
+		}
+		li{
+			border-radius: 6px;
+			margin:0 10px;
+		}
+	}
+	.tools{
+		display: flex;
+		flex-flow: row nowrap;
+		align-items: center;
+		color:white;
+		font-size: 1.6rem;
+		a{
+			display: inline-block;
+			color:white;
+			text-decoration: none;
+		}
+		.cart-block{
+			margin-left: 10px;
+		}
+		.countGoods{
+			font-family: 'Cabin', sans-serif;
+			font-size: 1rem;
+			margin-left: 8px;
+			align-self: flex-end;
+			font-weight: 700;
+		}
+		&>*{
+			padding:10px 12px;
+			&:hover{
+				border-radius: 6px;
+				background-color: $redColor;
+			}
+		}
+	}
+}

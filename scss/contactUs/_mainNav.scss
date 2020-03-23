@@ -1,0 +1,28 @@
+.main-navigation{
+	background-color: #f8f9fa;
+	.pages-navigation{
+		display: flex;
+		flex-flow:row nowrap;
+		justify-content: center;
+		font-family: "Roboto", sans-serif;
+		padding:35px 0;
+		color:#646565;
+		font-weight: 300;
+		li:last-child{
+			&::before{
+				content:"/";
+				display: inline-block;
+				margin:0 15px;
+				color:#bcbcbf;
+			}
+		}
+		a{
+			text-decoration: none;
+			color:$redColor;
+			&:hover{
+				color:#646565;
+			}
+		}
+	}
+}
+

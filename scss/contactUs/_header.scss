@@ -1,0 +1,50 @@
+header{
+	width:100%;
+}
+.header-content{
+	height: 53vh;
+	background-image: url('../img/bg-img/bg-image-1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	position: relative;
+	@include mq-tablet{
+		height: auto;
+	}
+	.header-title{
+		text-align: center;
+		color:white;
+		font-family: 'Roboto Slab', serif;
+		letter-spacing: 0.25rem;
+		padding-top: 50px;
+		.sub-title{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+    		margin-bottom: 20px;
+			&::after{
+				content:"";
+				width:100px;
+				height: 2px;
+				background-color: white;
+				display: inline-block;
+			}
+			&::before{
+				content:"";
+				width:100px;
+				height: 2px;
+				background-color: white;
+				display: inline-block;
+			}
+		}
+    	span{
+    		font-size: 2rem;
+    		display: inline-block;
+    		margin:0 20px;
+    	}
+    	h1{
+    		font-size: 3.8rem;
+    		font-weight: bold;
+    	}
+	}
+}
