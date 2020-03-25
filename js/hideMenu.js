@@ -1,7 +1,7 @@
 function hideMenu(selector) {
 	let menu = $(`${selector} .hidenMenu`);
 	let showMenu = $(`${selector} .showMenu`);
-	let coords = showMenu.offset();
+	let coords = showMenu.position();
 	let isOnMenu = false;
 	let timer;
 	menu.css({top: coords.top + showMenu.innerHeight() + 70, left: coords.left - 25 });
@@ -41,8 +41,6 @@ function hideMenu(selector) {
 			});
 		}, 500);
 	})
-
-
 }
 hideMenu(".move-wrap");
 hideMenu(".header-content");
