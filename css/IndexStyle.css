@@ -51,28 +51,6 @@ header {
   background-size: cover;
   overflow: hidden;
   position: relative; }
-  .header-content .hidenMenu {
-    position: absolute;
-    color: white;
-    z-index: 1000;
-    opacity: 0;
-    display: none;
-    top: 0;
-    left: 0;
-    background-color: #151515;
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    padding: 20px 40px;
-    width: 250px;
-    border-radius: 5px; }
-    .header-content .hidenMenu a {
-      text-decoration: none;
-      color: white;
-      line-height: 2;
-      font-size: 1.1rem;
-      transition: color 0.2s; }
-      .header-content .hidenMenu a:hover {
-        color: #d81a24; }
   @media (max-width: 768px) {
     .header-content {
       height: auto; } }
@@ -1097,6 +1075,48 @@ main {
 .active-btn {
   background-color: #d81a24; }
 
+.switch_theme {
+  position: fixed;
+  z-index: 1000;
+  top: -150px;
+  right: 50px;
+  cursor: pointer;
+  border: none;
+  text-transform: uppercase;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.1rem;
+  width: 70px;
+  line-height: 70px;
+  border-radius: 50%;
+  background-color: #d81a24;
+  font-weight: 500;
+  color: white;
+  outline: none;
+  transition: background-color .3s, top .5s; }
+  .switch_theme:hover {
+    background-color: #010d30; }
+
+.hidenMenu {
+  position: absolute;
+  color: white;
+  z-index: 1000;
+  opacity: 0;
+  background-color: #151515;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  padding: 20px 40px;
+  width: 250px;
+  border-radius: 5px;
+  display: none; }
+  .hidenMenu a {
+    text-decoration: none;
+    color: white;
+    line-height: 2;
+    font-size: 1.1rem;
+    transition: color 0.2s; }
+    .hidenMenu a:hover {
+      color: #d81a24; }
+
 .logo {
   display: flex;
   flex-flow: row nowrap;
@@ -1117,9 +1137,8 @@ main {
 
 .btn-up {
   z-index: 1000;
-  display: none;
   position: fixed;
-  bottom: 50px;
+  bottom: -100px;
   right: 50px;
   width: 60px;
   height: 60px;
@@ -1128,7 +1147,8 @@ main {
   text-align: center;
   border-radius: 50%;
   color: white;
-  font-size: 2.3rem; }
+  font-size: 2.3rem;
+  transition: bottom .3s; }
 
 .navigation {
   margin: 50px 0;
@@ -1273,26 +1293,6 @@ main {
   top: 0;
   z-index: 1000;
   transition: top .3s; }
-  .move-wrap .hidenMenu {
-    position: absolute;
-    color: white;
-    z-index: 1000;
-    opacity: 0;
-    background-color: #151515;
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    padding: 20px 40px;
-    width: 250px;
-    border-radius: 5px;
-    display: none; }
-    .move-wrap .hidenMenu a {
-      text-decoration: none;
-      color: white;
-      line-height: 2;
-      font-size: 1.1rem;
-      transition: color 0.2s; }
-      .move-wrap .hidenMenu a:hover {
-        color: #d81a24; }
 
 .main-nav {
   display: flex;

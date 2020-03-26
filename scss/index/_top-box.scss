@@ -11,7 +11,7 @@
 	}
 	}
 	.title{
-		@include title(white, $redColor);
+		@include title($main-white, $redColor);
 	}
 	.top-posts{
 		max-width: 1600px;
@@ -99,7 +99,7 @@
 				font-weight: bold;
 				transition: color 0.4s;
 				&:hover{
-					color:black;
+					color:$ultra-black;
 				}
 			}
 			@include mq-tablet{

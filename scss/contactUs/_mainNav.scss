@@ -8,7 +8,7 @@
 		padding:35px 0;
 		color:#646565;
 		font-weight: 300;
-		li:last-child{
+		li:not(:first-child){
 			&::before{
 				content:"/";
 				display: inline-block;

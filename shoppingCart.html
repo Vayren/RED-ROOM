@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>RED ROOM/Contact Us</title>
+    <title>RED ROOM | Shop</title>
 
     <script
       src="https://code.jquery.com/jquery-3.4.1.js"
@@ -32,7 +32,7 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="./css/ContactUs.css" />
+    <link rel="stylesheet" href="./css/Shop.css" />
   </head>
   <body>
     <a href="#" class="btn-up">
@@ -48,16 +48,16 @@
           <span class="name-logo">RED ROOM</span>
         </div>
         <ul class="header-navigation">
-          <li><a href="index.html">Home</a></li>
+          <li><a href="./index.html">Home</a></li>
           <li><a href="#">Catalog</a></li>
-          <li class="active-btn"><a href="#">News</a></li>
-          <li>
+          <li><a href="#">News</a></li>
+          <li class="active-btn">
             <a href="#" class="showMenu">
               Shop
               <i class="fa fa-angle-down" aria-hidden="true"></i>
             </a>
           </li>
-          <li><a href="contactUs.html">Coutact Us</a></li>
+          <li><a href="./contactUs.html">Coutact Us</a></li>
         </ul>
         <div class="tools">
           <a class="search" href="#"
@@ -70,7 +70,7 @@
         </div>
         <div class="hidenMenu">
           <ul>
-            <li><a href="./shoppingCart.html">Shopping cart</a></li>
+            <li><a href="#">Shopping cart</a></li>
             <li><a href="#">Checkout</a></li>
             <li><a href="#">Product catalog</a></li>
           </ul>
@@ -88,16 +88,16 @@
             <span class="name-logo">RED ROOM</span>
           </div>
           <ul class="header-navigation">
-            <li><a href="index.html">Home</a></li>
+            <li><a href="./index.html">Home</a></li>
             <li><a href="#">Catalog</a></li>
             <li><a href="#">News</a></li>
-            <li>
+            <li class="active-btn">
               <a href="#" class="showMenu">
                 Shop
                 <i class="fa fa-angle-down" aria-hidden="true"></i>
               </a>
             </li>
-            <li class="active-btn"><a href="contactUs.html">Coutact Us</a></li>
+            <li><a href="./contactUs.html">Coutact Us</a></li>
           </ul>
           <div class="tools">
             <a class="search" href="#"
@@ -110,7 +110,7 @@
           </div>
           <div class="hidenMenu">
             <ul>
-              <li><a href="./shoppingCart.html">Shopping cart</a></li>
+              <li><a href="#">Shopping cart</a></li>
               <li><a href="#">Checkout</a></li>
               <li><a href="#">Product catalog</a></li>
             </ul>
@@ -118,9 +118,9 @@
         </nav>
         <div class="header-title">
           <div class="sub-title">
-            <span>GET IN TOUCH</span>
+            <span>CHOOSE YOUR FAVORITE MOVIES</span>
           </div>
-          <h1>CONTACT INFORMATION</h1>
+          <h1>SHOPPING CART</h1>
         </div>
       </div>
     </header>
@@ -128,109 +128,101 @@
       <nav class="main-navigation">
         <ul class="pages-navigation">
           <li><a href="index.html">Home</a></li>
-          <li>Contact Us</li>
+          <li><a href="#">Shop</a></li>
+          <li>Shopping Cart</li>
         </ul>
       </nav>
-      <div class="main-contact">
-        <div class="contact-block">
-          <div class="title">
-            <h2>CONTACT US</h2>
-            <hr />
-          </div>
-          <div class="form-block">
-            <form action="#" name="mainForm">
-              <dit class="form-inner">
-                <div class="top-block">
-                  <div class="left-side">
-                    <div class="form-element">
-                      <input
-                        type="text"
-                        placeholder="Your first name..."
-                        name="firstName"
-                      />
-                      <span class="errorMessage"></span>
-                    </div>
-                    <div class="form-element">
-                      <input
-                        type="email"
-                        placeholder="Your e-mail..."
-                        name="formsEmain"
-                      />
-                      <span class="errorMessage"></span>
-                    </div>
+      <div class="main-content">
+        <div class="content-wrapper">
+          <table class="main-table">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <i class="fa fa-trash"></i>
+                </td>
+                <td>
+                  <a href="#">Ant-Man and the Wasp</a>
+                </td>
+                <td>$29.00</td>
+                <td>
+                  <div class="addOne">
+                    <i class="fa fa-angle-left" aria-hidden="true"></i>
+                    <span class="current_num">1</span>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
                   </div>
-                  <div class="right-side">
-                    <div class="form-element">
-                      <input
-                        type="text"
-                        placeholder="Your last name..."
-                        name="lastName"
-                      />
-                      <span class="errorMessage"></span>
-                    </div>
-                    <div class="form-element">
-                      <input
-                        type="text"
-                        placeholder="Your phone..."
-                        name="formsPhone"
-                      />
-                      <span class="errorMessage"></span>
-                    </div>
+                </td>
+                <td>$29.00</td>
+              </tr>
+              <tr>
+                <td>
+                  <i class="fa fa-trash"></i>
+                </td>
+                <td>
+                  <a href="#">Avengers: Infinity War</a>
+                </td>
+                <td>$29.00</td>
+                <td>
+                  <div class="addOne">
+                    <i class="fa fa-angle-left" aria-hidden="true"></i>
+                    <span class="current_num">1</span>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
                   </div>
-                </div>
-                <div class="middle-block">
-                  <div class="form-element">
-                    <textarea
-                      placeholder="Message:"
-                      name="formMessage"
-                    ></textarea>
-                    <span class="errorMessage"></span>
-                  </div>
-                </div>
-                <div class="bottom-block">
-                  <button type="submit">send message</button>
-                </div>
-              </dit>
+                </td>
+                <td>$29.00</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="content-bottom">
+            <form action="#">
+              <input type="text" placeholder="Coupone code" />
+              <button type="submit">apply coupon</button>
             </form>
+            <button>update cart</button>
           </div>
-        </div>
-        <div class="info-block">
-          <div class="info-inner">
-            <div class="content-block">
-              <div class="symbol">
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-              </div>
-              <div class="info">
-                <h2>Post Address</h2>
-                <a href="#">
-                  The Company Name Inc.9863 - 9867 Mill Road, Cambridge, MG09
-                  99HT.
-                </a>
-              </div>
-            </div>
-            <div class="content-block">
-              <div class="symbol">
-                <i class="fa fa-phone" aria-hidden="true"></i>
-              </div>
-              <div class="info">
-                <h2>Phone</h2>
-                <p>
-                  <span class="title">Phone:</span>
-                  <a href="#">+1 800 603 6035</a>
-                </p>
-                <p>
-                  <span class="title">FAX:</span><a href="#">+1 800 889 9898</a>
-                </p>
-              </div>
-            </div>
-            <div class="content-block">
-              <div class="symbol">
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-              </div>
-              <div class="info">
-                <h2>Email</h2>
-                <a href="#">mail@demolink.org</a>
-              </div>
+          <div class="final-res">
+            <div class="final-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Carts Totals</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <span class="title">
+                        Subtotal
+                      </span>
+                    </td>
+                    <td>
+                      $58.00
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="title">
+                        Total
+                      </span>
+                    </td>
+                    <td>
+                      <span class="res">
+                        $58.00
+                      </span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <a href="#">proceed to checkout</a>
             </div>
           </div>
         </div>
@@ -253,7 +245,6 @@
     <script src="./js/footerShow.js"></script>
     <script src="./js/btn-up_fixed-menu.js"></script>
     <script src="./js/headerResize.js"></script>
-    <script src="./js/formSubmit.js"></script>
     <script src="./js/hideMenu.js"></script>
   </body>
 </html>

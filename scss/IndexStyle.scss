@@ -1,5 +1,5 @@
 @import 'commonStyles/reset';
-@import 'commonStyles/variables';
+@import 'commonStyles/_variables_1';
 @import 'commonStyles/mixins';
 @import 'index/header';
 @import 'index/movies-block';
@@ -34,6 +34,52 @@ main{
 .active-btn{
 	background-color: $redColor;
 }
+.switch_theme{
+	position: fixed;
+	z-index: 1000;
+	top:-150px;
+	right: 50px;
+	cursor: pointer;
+	border:none;
+	text-transform: uppercase;
+	font-family: 'Roboto Slab', serif;
+	font-size: 1.1rem;
+	width:70px;
+	line-height: 70px;
+	border-radius: 50%;
+	background-color: $redColor;
+	font-weight: 500;
+	color:white;
+	outline: none;
+	transition: background-color .3s, top .5s;
+	&:hover{
+		background-color: #010d30;
+	}
+	
+}
+.hidenMenu{
+	position: absolute;
+	color:white;
+	z-index: 1000;
+	opacity: 0;
+	background-color: #151515;
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+	padding: 20px 40px;
+	width:250px;
+	border-radius: 5px;
+	display: none;
+	a{
+		text-decoration: none;
+		color:white;
+		line-height: 2;
+		font-size: 1.1rem;
+		transition: color 0.2s;
+		&:hover{
+			color:$redColor;
+		}
+	}
+}
 .logo{
 	display: flex;
 	flex-flow:row nowrap;
@@ -55,9 +101,8 @@ main{
 }
 .btn-up{
 	z-index: 1000;
-	display: none;
 	position:fixed;
-	bottom:50px;
+	bottom:-100px;
 	right: 50px;
 	width:60px;
 	height: 60px;
@@ -67,6 +112,7 @@ main{
 	border-radius: 50%;
 	color:white;
 	font-size: 2.3rem;
+	transition: bottom .3s;
 }
 .navigation{
 	margin: 50px 0;
@@ -182,7 +228,7 @@ main{
 		i.fa-star{
 			color:$redColor;
 			&:last-child{
-				color:#b7b7b7;
+				color:$silver-text;
 			}
 		}
 	}
@@ -229,29 +275,6 @@ main{
 	top:0;
 	z-index: 1000;
 	transition: top .3s;
-	.hidenMenu{
-		position: absolute;
-		color:white;
-		z-index: 1000;
-		opacity: 0;
-		background-color: #151515;
-		font-family: "Roboto", sans-serif;
-		font-weight: 300;
-		padding: 20px 40px;
-		width:250px;
-		border-radius: 5px;
-		display: none;
-		a{
-			text-decoration: none;
-			color:white;
-			line-height: 2;
-			font-size: 1.1rem;
-			transition: color 0.2s;
-			&:hover{
-				color:$redColor;
-			}
-		}
-	}
 }
 .main-nav{
 	display: flex;

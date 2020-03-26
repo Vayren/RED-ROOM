@@ -17,7 +17,7 @@
 		}
 	}
 	.title{
-		@include title(white, $redColor);
+		@include title($main-white, $redColor);
 	}
 	p{
 		color:#eeeef0;
@@ -39,10 +39,10 @@
 			font-family: "Roboto", sans-serif;
 			padding:19px 20px;
 			border-radius: 5px;
-			color:white;
+			color:$main-white;
 			width:330px;
 			&::placeholder {
-			  color: white;
+			  color: $main-white;
 			}
 			@include mq-tablet{
 				width:100%;
@@ -54,7 +54,7 @@
 			text-transform: uppercase;
 			font-family: 'Roboto Slab', serif;
 			font-weight: 600;
-			color:white;
+			color:$main-white;
 			background-color: rgba($redColor, 1);
 			padding:15px 55px;
 			border-radius: 5px;

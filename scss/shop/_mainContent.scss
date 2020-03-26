@@ -1,0 +1,157 @@
+.main-content{
+	.content-wrapper{
+		max-width: 1170px;
+		margin:0 auto;
+		padding: 90px 0;
+	}
+	.main-table{
+		width:100%;
+		border:1px solid #dddddd;
+		margin-bottom: 60px;
+		thead{
+			background-color: $redColor;
+			color:$main-white;
+			font-family: 'Roboto Slab', serif;
+			font-weight: 500;
+			tr>th{
+				padding:20px 0;
+				text-align: left;
+				padding-left: 40px;
+			}
+		}
+		tbody{
+			font-family: "Roboto", sans-serif;
+			font-weight: 300;
+			i{
+				cursor: pointer;
+				color:#b6b6b6;
+				&:hover{
+					color:black;
+				}
+			}
+			tr{
+				&:not(:last-child){
+					border-bottom: 1px solid #eeecec;
+				}
+				&:hover{
+					background-color:$silver-bcg;
+				}
+			}
+			a{
+				text-decoration: none;
+				color:blue;
+				&:hover{
+					color:$redColor;
+				}
+			}
+			tr>td{
+				padding:20px 0;
+				padding-left:40px;
+				font-size: 1.1rem;
+			}
+			.addOne{
+				i{
+					color:$silver-text;
+					cursor: pointer;
+					&:hover{
+						color:black;
+					}
+				}
+				span{
+					display: inline-block;
+					margin:0 10px;
+				}
+			}
+		}
+
+	}
+	.content-bottom{
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		form{
+			display: flex;
+			flex-flow: row nowrap;
+			input{
+				margin-right: 10px;
+				outline: none;
+				border:none;
+				background-color: $silver-bcg;
+				padding:15px;
+				border-radius:5px;
+				font-size: 1.1rem;
+				color:#c1c1c1;
+				&::placeholder { 
+					color:#c1c1c1;
+				}
+			}
+		}
+		button{
+			cursor: pointer;
+			@include btn($main-white);
+			background-color: $redColor;
+			border: none;
+			&:hover{
+				background-color:#322f2f;
+			}
+		}
+	}
+	.final-res{
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: flex-end;
+		margin-top: 120px;
+	}
+	.final-wrap{
+		display: flex;
+		flex-flow: column nowrap;
+		width:360px;
+		table{
+			border:1px solid #dddddd;
+			thead{
+				background-color: $redColor;
+				color:$main-white;
+				font-family: 'Roboto Slab', serif;
+				font-weight: 500;
+				tr>th{
+					padding:20px 0;
+					text-align: left;
+					padding-left: 40px;
+				}
+			}
+			tbody{
+				font-family: "Roboto", sans-serif;
+				font-weight: 300;
+				span{
+					color:#c3c1c1;
+					&.res{
+						color:black;
+						font-weight: 700;
+					}
+				}
+				tr{
+					&:not(:last-child){
+						border-bottom: 1px solid #eeecec;
+					}
+					&:hover{
+						background-color:$silver-bcg;
+					}
+				}
+				tr>td{
+					padding:20px 0;
+					padding-left:40px;
+					font-size: 1.1rem;
+				}
+			}
+		}
+		a{
+			margin-top: 30px;
+			@include btn($main-white);
+			background-color: $redColor;
+			border: none;
+			&:hover{
+				background-color:#322f2f;
+			}
+		}
+	}
+}

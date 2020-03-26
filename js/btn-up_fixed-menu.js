@@ -1,4 +1,4 @@
-function btnUp() {
+function btnUpFixedMenu() {
 	let upBtn = $('.btn-up');	
 	let fixedMenu = $('.move-wrap');
 	fixedMenu.css('top', fixedMenu.outerHeight() * -1);
@@ -13,8 +13,10 @@ function btnUp() {
 	})
 	$(window).scroll(function (event) {
 
-		if(window.pageYOffset > 700 && window.innerWidth >= 950) upBtn.show();
-		else upBtn.hide();
+		if(window.pageYOffset > 700 && window.innerWidth >= 950){
+			upBtn.css('bottom', 50);
+		}
+		else upBtn.css('bottom', -150);
 
 		if(window.pageYOffset > 300){
 			fixedMenu.css('top', 0);
@@ -24,4 +26,4 @@ function btnUp() {
 		}
 	});
 }
-btnUp();
+btnUpFixedMenu();

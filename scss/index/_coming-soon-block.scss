@@ -6,7 +6,7 @@
 		padding:60px 0;
 	}
 	.title{
-		@include title(white, $redColor);
+		@include title($main-white, $redColor);
 	}
 	.movie-block{
 		max-width: 1360px;
@@ -58,7 +58,7 @@
 		        left: 50%;
 		        transform: translate(-50%, -50%);
 		        text-decoration: none;
-		        color:white;
+		        color:$main-white;
 		        border-radius: 50%;
 			}
 			ul{
@@ -67,18 +67,18 @@
 				left:5%;
 				display: flex;
 				flex-flow: row nowrap;
-				color:white;
+				color:$main-white;
 				font-size: 1.2rem;
 				font-family: 'Roboto Slab', serif;
 				font-weight: 600;
 				li:not(:last-child)::after{
 					content: '';
-					border-right:2px solid white;
+					border-right:2px solid $main-white;
 					margin:0 10px;
 				}
 				a{
 					text-decoration: none;
-					color:white;
+					color:$main-white;
 					transition: color 0.3s;
 					&:hover{
 						color:$redColor;
@@ -117,7 +117,7 @@
 			letter-spacing: 0.2rem;
 			a{
 				text-decoration: none;
-				color:white;
+				color:$main-white;
 				font-size: 2rem;
 				transition: color 0.3s;
 				&:hover{
@@ -161,7 +161,7 @@
 		.people{
 			font-size: 1.05rem;
 			span{
-				color:white;
+				color:$main-white;
 				font-weight: bold;
 				display: inline-block;
 				margin-right: 10px;
@@ -178,7 +178,7 @@
 		}
 	}
 	.btn-wachlist{
-		@include btn(white);
+		@include btn($main-white);
 		@include mq-tablet{
 			font-size: 1rem;
 			padding: 15px 30px;

@@ -9,14 +9,14 @@ footer{
 	background-color: $black-bcg;
 	.logo{
 		display: inline-flex;
-		color:white;
+		color:$main-white;
 		font-weight: bold;
 	}
 	.shares{
 		margin: 20px 0 30px 0;
 		a{
 			display: inline-block;
-			color:white;
+			color:$main-white;
 			text-decoration: none;
 			font-size: 1.3rem;
 			margin:0 5px;

@@ -134,150 +134,150 @@ header {
       .main-navigation .pages-navigation a:hover {
         color: #646565; }
 
-.contact-block .title {
-  padding: 100px 0 60px 0;
-  text-align: center; }
-  .contact-block .title h2 {
+.main-content .content-wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 90px 0; }
+
+.main-content .main-table {
+  width: 100%;
+  border: 1px solid #dddddd;
+  margin-bottom: 60px; }
+  .main-content .main-table thead {
+    background-color: #d81a24;
+    color: white;
     font-family: 'Roboto Slab', serif;
-    font-size: 3rem;
-    font-weight: bold;
-    color: black; }
-  .contact-block .title hr {
-    margin-top: 35px;
-    width: 100px;
-    height: 2px;
-    background-color: #b7b7b7;
-    border: none; }
-  @media (max-width: 950px) {
-    .contact-block .title h2 {
-      font-size: 2.5rem; } }
-  @media (max-width: 768px) {
-    .contact-block .title h2 {
-      font-size: 2.2rem; } }
-  @media (max-width: 550px) {
-    .contact-block .title h2 {
-      font-size: 2rem; }
-    .contact-block .title hr {
-      margin-top: 20px; } }
-  @media (max-width: 425px) {
-    .contact-block .title h2 {
-      font-size: 1.5rem; } }
-
-.contact-block .form-block {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center; }
-
-.contact-block form {
-  width: 770px; }
-
-.contact-block .form-inner {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center; }
-  .contact-block .form-inner .form-element {
-    position: relative;
-    margin: 5px;
-    font-family: "Roboto", sans-serif; }
-    .contact-block .form-inner .form-element .errorMessage {
-      position: absolute;
-      top: 5px;
-      right: 10px;
-      font-size: 0.7rem;
-      font-weight: 300;
-      color: #d81a24;
-      opacity: 1; }
-  .contact-block .form-inner .top-block {
-    display: flex;
-    flex-flow: row nowrap; }
-    .contact-block .form-inner .top-block .left-side, .contact-block .form-inner .top-block .right-side {
-      display: flex;
-      flex-flow: column nowrap;
-      flex: 1; }
-      .contact-block .form-inner .top-block .left-side input, .contact-block .form-inner .top-block .right-side input {
-        width: 100%;
-        outline: none;
-        border: none;
-        background-color: #f8f8f8;
-        padding: 20px;
-        border-radius: 5px;
-        font-size: 1.2rem;
-        color: #c1c1c1; }
-        .contact-block .form-inner .top-block .left-side input::placeholder, .contact-block .form-inner .top-block .right-side input::placeholder {
-          color: #c1c1c1; }
-  .contact-block .form-inner .middle-block textarea {
-    font-size: 1.2rem;
-    width: 100%;
-    resize: none;
-    height: 190px;
-    outline: none;
-    border: none;
-    background-color: #f8f8f8;
-    padding: 20px;
-    border-radius: 5px;
-    color: #c1c1c1;
-    font-family: "Roboto", sans-serif; }
-    .contact-block .form-inner .middle-block textarea::placeholder {
-      color: #c1c1c1; }
-  .contact-block .form-inner .bottom-block {
-    text-align: center; }
-    .contact-block .form-inner .bottom-block button {
-      text-transform: uppercase;
+    font-weight: 500; }
+    .main-content .main-table thead tr > th {
+      padding: 20px 0;
+      text-align: left;
+      padding-left: 40px; }
+  .main-content .main-table tbody {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300; }
+    .main-content .main-table tbody i {
+      cursor: pointer;
+      color: #b6b6b6; }
+      .main-content .main-table tbody i:hover {
+        color: black; }
+    .main-content .main-table tbody tr:not(:last-child) {
+      border-bottom: 1px solid #eeecec; }
+    .main-content .main-table tbody tr:hover {
+      background-color: #f6f6f6; }
+    .main-content .main-table tbody a {
       text-decoration: none;
-      display: inline-block;
-      font-family: 'Roboto Slab', serif;
-      color: white;
-      border: 2px solid #d81a24;
-      border-radius: 5px;
-      font-size: 1.2rem;
-      padding: 20px 40px;
-      font-weight: 500;
-      transition: all 0.3s;
-      background-color: #d81a24;
-      border: none;
+      color: blue; }
+      .main-content .main-table tbody a:hover {
+        color: #d81a24; }
+    .main-content .main-table tbody tr > td {
+      padding: 20px 0;
+      padding-left: 40px;
+      font-size: 1.1rem; }
+    .main-content .main-table tbody .addOne i {
+      color: #b7b7b7;
       cursor: pointer; }
-      .contact-block .form-inner .bottom-block button:hover {
-        color: white;
-        background-color: #d81a24; }
-      .contact-block .form-inner .bottom-block button:hover {
-        background-color: #322f2f; }
+      .main-content .main-table tbody .addOne i:hover {
+        color: black; }
+    .main-content .main-table tbody .addOne span {
+      display: inline-block;
+      margin: 0 10px; }
 
-.info-block .info-inner {
-  max-width: 1000px;
-  margin: 90px auto;
+.main-content .content-bottom {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between; }
-
-.info-block .content-block {
-  display: flex;
-  max-width: 300px;
-  font-family: "Roboto", sans-serif; }
-  .info-block .content-block:nth-child(2) p {
+  .main-content .content-bottom form {
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between; }
-  .info-block .content-block .symbol {
-    color: #d81a24;
-    font-size: 1.5rem; }
-  .info-block .content-block .info {
-    padding: 0 30px; }
-    .info-block .content-block .info p, .info-block .content-block .info a {
-      line-height: 1.8; }
-    .info-block .content-block .info h2 {
-      font-weight: 500;
-      font-size: 1.2rem;
-      margin-bottom: 5px; }
-    .info-block .content-block .info a {
-      text-decoration: none;
-      color: #6b6a6a;
-      font-weight: 300;
-      transition: color .2s; }
-      .info-block .content-block .info a:hover {
-        color: #d81a24; }
-    .info-block .content-block .info .title {
-      display: inline-block;
-      margin-right: 25px; }
+    flex-flow: row nowrap; }
+    .main-content .content-bottom form input {
+      margin-right: 10px;
+      outline: none;
+      border: none;
+      background-color: #f6f6f6;
+      padding: 15px;
+      border-radius: 5px;
+      font-size: 1.1rem;
+      color: #c1c1c1; }
+      .main-content .content-bottom form input::placeholder {
+        color: #c1c1c1; }
+  .main-content .content-bottom button {
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    border: 2px solid #d81a24;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    padding: 20px 40px;
+    font-weight: 500;
+    transition: all 0.3s;
+    background-color: #d81a24;
+    border: none; }
+    .main-content .content-bottom button:hover {
+      color: white;
+      background-color: #d81a24; }
+    .main-content .content-bottom button:hover {
+      background-color: #322f2f; }
+
+.main-content .final-res {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  margin-top: 120px; }
+
+.main-content .final-wrap {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 360px; }
+  .main-content .final-wrap table {
+    border: 1px solid #dddddd; }
+    .main-content .final-wrap table thead {
+      background-color: #d81a24;
+      color: white;
+      font-family: 'Roboto Slab', serif;
+      font-weight: 500; }
+      .main-content .final-wrap table thead tr > th {
+        padding: 20px 0;
+        text-align: left;
+        padding-left: 40px; }
+    .main-content .final-wrap table tbody {
+      font-family: "Roboto", sans-serif;
+      font-weight: 300; }
+      .main-content .final-wrap table tbody span {
+        color: #c3c1c1; }
+        .main-content .final-wrap table tbody span.res {
+          color: black;
+          font-weight: 700; }
+      .main-content .final-wrap table tbody tr:not(:last-child) {
+        border-bottom: 1px solid #eeecec; }
+      .main-content .final-wrap table tbody tr:hover {
+        background-color: #f6f6f6; }
+      .main-content .final-wrap table tbody tr > td {
+        padding: 20px 0;
+        padding-left: 40px;
+        font-size: 1.1rem; }
+  .main-content .final-wrap a {
+    margin-top: 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    border: 2px solid #d81a24;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    padding: 20px 40px;
+    font-weight: 500;
+    transition: all 0.3s;
+    background-color: #d81a24;
+    border: none; }
+    .main-content .final-wrap a:hover {
+      color: white;
+      background-color: #d81a24; }
+    .main-content .final-wrap a:hover {
+      background-color: #322f2f; }
 
 * {
   box-sizing: border-box; }

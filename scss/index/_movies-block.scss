@@ -1,13 +1,13 @@
 .movies-block{
 	padding-top: 100px;
 	padding-bottom: 45px;
-	background-color: #f6f6f6;
+	background-color: $silver-bcg;
 	text-align: center;
 	@include mq-mobile-m{
 		padding-top:60px;
 	}
 	.title{
-		@include title(black, #b7b7b7);
+		@include title($ultra-black, $silver-text);
 	}
 	.posts-block{
 		max-width: 1360px;

@@ -13,7 +13,7 @@ header{
 	}
 	.header-title{
 		text-align: center;
-		color:white;
+		color:$main-white;
 		font-family: 'Roboto Slab', serif;
 		letter-spacing: 0.25rem;
 		padding-top: 50px;
@@ -26,14 +26,14 @@ header{
 				content:"";
 				width:100px;
 				height: 2px;
-				background-color: white;
+				background-color: $main-white;
 				display: inline-block;
 			}
 			&::before{
 				content:"";
 				width:100px;
 				height: 2px;
-				background-color: white;
+				background-color: $main-white;
 				display: inline-block;
 			}
 		}
