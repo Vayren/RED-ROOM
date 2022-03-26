@@ -15,6 +15,6 @@
     "gulp-sass": "^4.0.2"
   },
   "dependencies": {
-    "minimist": "^1.2.5"
+    "minimist": "^1.2.6"
   }
 }
